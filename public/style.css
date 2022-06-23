@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 70%;
+  margin: 2rem auto;
+}
+
+h1,
+h3 {
+  margin: 1.8rem 0;
+}
+
+html {
+  background-color: #001632;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #ff9900;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+header li {
+  display: inline-block;
+  padding: 1rem;
+}
+
+.cart li {
+  margin: 1rem 0;
+}
+
