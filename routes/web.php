@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $data = [
         'name' => 'Davide',
+        'lastname' => 'Isaia',
         'cart' => [
             [
                 'name' => 'LG OLED Smart TV 4K 55", TV OLED Serie C1',
@@ -36,4 +37,12 @@ Route::get('/', function () {
         ]
     ];
     return view('home', $data);
-});
+})->name('home');
+
+Route::get('/user-profile', function () {
+    $data = [
+        'name' => 'Davide',
+        'lastname' => 'Isaia',
+    ];
+    return view('profile', $data);
+})->name('profile');

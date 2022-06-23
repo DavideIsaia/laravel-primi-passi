@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Hello Laravel</title>
+  <title>User Profile</title>
 </head>
 <body>
   <header>
@@ -13,12 +13,6 @@
       <li><a href="{{ route('profile') }}">Profilo utente</a></li>
     </ul>
   </header>
-  <h1>Ciao {{ $name }}, Bentornato!</h1>
-  <h3>La tua Wishlist comprende:</h3> 
-  <ul>
-    @foreach ($cart as $item)
-      <li><strong>{{ $item['name'] }}</strong>: € {{ $item['price']}}</li>        
-    @endforeach
-  </ul>
+  <h2>Profilo di {{ $name }} {{ $lastname }}</h2>  
 </body>
 </html>
