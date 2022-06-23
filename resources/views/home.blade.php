@@ -7,6 +7,12 @@
   <title>Hello Laravel</title>
 </head>
 <body>
-  <h1>Hello World</h1>  
+  <h1>Ciao {{ $name }}, Bentornato!</h1>
+  <h3>La tua Wishlist comprende:</h3> 
+  <ul>
+    @foreach ($cart as $item)
+      <li><strong>{{ $item['name'] }}</strong>: € {{ $item['price']}}</li>        
+    @endforeach
+  </ul>
 </body>
 </html>
